@@ -1,6 +1,6 @@
 SRC = ./src
 BUILD = ./build
-BIN = ./SFML/bin
+BIN = ./bin
 SRCS := $(wildcard $(SRC)/*.cpp)
 OBJ := $(subst $(SRC), $(BUILD), $(SRCS:.cpp=.o))
 NAME = $(BIN)/main
