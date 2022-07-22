@@ -45,6 +45,9 @@ void Window::Update(){
             m_isFocused = true;
             m_eventManager.SetFocus(true);
         }
+        else if (event.type == sf::Event::Closed){
+            CloseHelper();
+        }
         m_eventManager.HandleEvent(event);
     }
     m_eventManager.Update();
@@ -60,7 +63,8 @@ void Window::Draw(sf::Drawable&l_drawable){
  m_window.draw(l_drawable);
 }
 sf::RenderWindow& Window::GetRenderWindow(){ return m_window; };
-void Window::Close(EventDetails* l_details){ m_isDone = true; }
+void Window::Close(EventDetails* l_details){ CloseHelper(); }
+void Window::CloseHelper(){ m_isDone = true ;}
 void Window::ToggleFullscreen(EventDetails* l_details){
     m_isFullscreen = !m_isFullscreen;  
 };

@@ -20,6 +20,7 @@ class Window{
         EventManager* GetEventManager();
         void ToggleFullscreen(EventDetails* l_details);
         void Close(EventDetails* l_details);
+        void CloseHelper();
     private:
         void Setup(const std::string& l_title, const sf::Vector2u& l_size);
         void Destroy();
