@@ -4,7 +4,7 @@ BIN = ./bin
 SRCS := $(wildcard $(SRC)/*.cpp)
 OBJ := $(subst $(SRC), $(BUILD), $(SRCS:.cpp=.o))
 NAME = $(BIN)/main
-LIBFLAGS = -L./SFML/lib -lsfml-graphics -lsfml-window -lsfml-system
+LIBFLAGS = -mwindows -L./SFML/lib -lsfml-graphics -lsfml-window -lsfml-system
 INCFLAGS = -I./SFML/include
 TARGET =  run
 
@@ -17,7 +17,7 @@ $(BUILD)/%.o: $(SRC)/%.cpp | $(BUILD)
 $(NAME): $(OBJ)
 	g++ -o $@ $^ $(LIBFLAGS) 
 $(BUILD):
-	mkdir -p $@
+	mkdir $@
 clean:
 	rm $(OBJ)
 testst:

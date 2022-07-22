@@ -171,3 +171,5 @@ Direction Snake::GetPhysicalDirection(){
 void Snake::IncreaseLives(){
     ++m_lives;
 };
+
+

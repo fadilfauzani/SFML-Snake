@@ -1,7 +1,7 @@
 #ifndef __SNAKE__H__
 #define __SNAKE__H__
 #include <SFML/Graphics.hpp>
-
+#include "EventManager.hpp"
 struct SnakeSegment{
     sf::Vector2i position;
     SnakeSegment(int x, int y) : position(x,y){}
@@ -32,6 +32,8 @@ class Snake{
         void Tick(); // Update method.
         void Cut(int l_segments); // Method for cutting snake.
         void Render(sf::RenderWindow& l_window);
+
+
         Direction GetPhysicalDirection();
     private:
         void CheckCollision(); // Checking for collisions.

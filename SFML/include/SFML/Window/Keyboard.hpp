@@ -48,88 +48,88 @@ public:
     enum Key
     {
         Unknown = -1, ///< Unhandled key
-        A = 0,        ///< The A key
-        B,            ///< The B key
-        C,            ///< The C key
-        D,            ///< The D key
-        E,            ///< The E key
-        F,            ///< The F key
-        G,            ///< The G key
-        H,            ///< The H key
-        I,            ///< The I key
-        J,            ///< The J key
-        K,            ///< The K key
-        L,            ///< The L key
-        M,            ///< The M key
-        N,            ///< The N key
-        O,            ///< The O key
-        P,            ///< The P key
-        Q,            ///< The Q key
-        R,            ///< The R key
-        S,            ///< The S key
-        T,            ///< The T key
-        U,            ///< The U key
-        V,            ///< The V key
-        W,            ///< The W key
-        X,            ///< The X key
-        Y,            ///< The Y key
-        Z,            ///< The Z key
-        Num0,         ///< The 0 key
-        Num1,         ///< The 1 key
-        Num2,         ///< The 2 key
-        Num3,         ///< The 3 key
-        Num4,         ///< The 4 key
-        Num5,         ///< The 5 key
-        Num6,         ///< The 6 key
-        Num7,         ///< The 7 key
-        Num8,         ///< The 8 key
-        Num9,         ///< The 9 key
-        Escape,       ///< The Escape key
-        LControl,     ///< The left Control key
-        LShift,       ///< The left Shift key
-        LAlt,         ///< The left Alt key
-        LSystem,      ///< The left OS specific key: window (Windows and Linux), apple (MacOS X), ...
-        RControl,     ///< The right Control key
-        RShift,       ///< The right Shift key
-        RAlt,         ///< The right Alt key
-        RSystem,      ///< The right OS specific key: window (Windows and Linux), apple (MacOS X), ...
-        Menu,         ///< The Menu key
-        LBracket,     ///< The [ key
-        RBracket,     ///< The ] key
-        Semicolon,    ///< The ; key
-        Comma,        ///< The , key
-        Period,       ///< The . key
-        Quote,        ///< The ' key
-        Slash,        ///< The / key
-        Backslash,    ///< The \ key
-        Tilde,        ///< The ~ key
-        Equal,        ///< The = key
-        Hyphen,       ///< The - key (hyphen)
-        Space,        ///< The Space key
-        Enter,        ///< The Enter/Return keys
-        Backspace,    ///< The Backspace key
-        Tab,          ///< The Tabulation key
-        PageUp,       ///< The Page up key
-        PageDown,     ///< The Page down key
-        End,          ///< The End key
-        Home,         ///< The Home key
-        Insert,       ///< The Insert key
-        Delete,       ///< The Delete key
-        Add,          ///< The + key
-        Subtract,     ///< The - key (minus, usually from numpad)
-        Multiply,     ///< The * key
-        Divide,       ///< The / key
-        Left,         ///< Left arrow
-        Right,        ///< Right arrow
-        Up,           ///< Up arrow
-        Down,         ///< Down arrow
-        Numpad0,      ///< The numpad 0 key
-        Numpad1,      ///< The numpad 1 key
-        Numpad2,      ///< The numpad 2 key
-        Numpad3,      ///< The numpad 3 key
-        Numpad4,      ///< The numpad 4 key
-        Numpad5,      ///< The numpad 5 key
-        Numpad6,      ///< The numpad 6 key
+        A = 0,        ///< The A key 
+        B,            ///< The B key 1
+        C,            ///< The C key 2
+        D,            ///< The D key 3 
+        E,            ///< The E key 4
+        F,            ///< The F key 5 
+        G,            ///< The G key 6
+        H,            ///< The H key 7
+        I,            ///< The I key 8
+        J,            ///< The J key 9 
+        K,            ///< The K key 10
+        L,            ///< The L key 11
+        M,            ///< The M key 12
+        N,            ///< The N key 13
+        O,            ///< The O key 14
+        P,            ///< The P key 15
+        Q,            ///< The Q key 16
+        R,            ///< The R key 17
+        S,            ///< The S key 18
+        T,            ///< The T key 19
+        U,            ///< The U key 20
+        V,            ///< The V key 21
+        W,            ///< The W key 22
+        X,            ///< The X key 23
+        Y,            ///< The Y key 24
+        Z,            ///< The Z key 25
+        Num0,         ///< The 0 key 26
+        Num1,         ///< The 1 key 27
+        Num2,         ///< The 2 key 28
+        Num3,         ///< The 3 key 29
+        Num4,         ///< The 4 key 30
+        Num5,         ///< The 5 key 31
+        Num6,         ///< The 6 key 32
+        Num7,         ///< The 7 key 33
+        Num8,         ///< The 8 key 34
+        Num9,         ///< The 9 key 35
+        Escape,       ///< The Escape key 36
+        LControl,     ///< The left Control key 37
+        LShift,       ///< The left Shift key 38
+        LAlt,         ///< The left Alt key 39
+        LSystem,      ///< The left OS specific key: window (Windows and Linux), apple (MacOS X), ... 40
+        RControl,     ///< The right Control key 41
+        RShift,       ///< The right Shift key 42
+        RAlt,         ///< The right Alt key 43
+        RSystem,      ///< The right OS specific key: window (Windows and Linux), apple (MacOS X), ... 44
+        Menu,         ///< The Menu key 45
+        LBracket,     ///< The [ key 46
+        RBracket,     ///< The ] key 47
+        Semicolon,    ///< The ; key 48
+        Comma,        ///< The , key 49
+        Period,       ///< The . key 50
+        Quote,        ///< The ' key 51
+        Slash,        ///< The / key 52
+        Backslash,    ///< The \ key 53
+        Tilde,        ///< The ~ key 54
+        Equal,        ///< The = key 55
+        Hyphen,       ///< The - key (hyphen) 56
+        Space,        ///< The Space key 57
+        Enter,        ///< The Enter/Return keys 58
+        Backspace,    ///< The Backspace key 59
+        Tab,          ///< The Tabulation key 60
+        PageUp,       ///< The Page up key 61
+        PageDown,     ///< The Page down key 62
+        End,          ///< The End key 63
+        Home,         ///< The Home key 64
+        Insert,       ///< The Insert key 65
+        Delete,       ///< The Delete key 66
+        Add,          ///< The + key 67
+        Subtract,     ///< The - key (minus, usually from numpad) 68
+        Multiply,     ///< The * key 69
+        Divide,       ///< The / key 70
+        Left,         ///< Left arrow 71 
+        Right,        ///< Right arrow 72
+        Up,           ///< Up arrow 73
+        Down,         ///< Down arrow 74
+        Numpad0,      ///< The numpad 0 key 75
+        Numpad1,      ///< The numpad 1 key 76
+        Numpad2,      ///< The numpad 2 key 77
+        Numpad3,      ///< The numpad 3 key 78
+        Numpad4,      ///< The numpad 4 key 79
+        Numpad5,      ///< The numpad 5 key 80
+        Numpad6,      ///< The numpad 6 key 82
         Numpad7,      ///< The numpad 7 key
         Numpad8,      ///< The numpad 8 key
         Numpad9,      ///< The numpad 9 key
