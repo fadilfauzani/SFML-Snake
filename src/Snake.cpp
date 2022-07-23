@@ -3,7 +3,7 @@
 Snake::Snake(int l_blockSize){
     m_size = l_blockSize;
     m_bodyRect.setSize(sf::Vector2f(m_size - 1, m_size - 1));
-    m_dir = Direction::Right;
+    // m_dir = Direction::Right;
     Reset();
 }
 void Snake::Reset(){
@@ -11,9 +11,14 @@ void Snake::Reset(){
     m_snakeBody.push_back(SnakeSegment(5,7));
     m_snakeBody.push_back(SnakeSegment(5,6));
     m_snakeBody.push_back(SnakeSegment(5,5));
-    SetDirection(Direction::Right); // Start off still.
+    // m_snakeBody.push_back(SnakeSegment(5,7));
+
+    // m_snakeBody.push_back(SnakeSegment(5,6));
+    // m_snakeBody.push_back(SnakeSegment(5,5));
+    // m_snakeBody.push_back(SnakeSegment(5,9));
+    SetDirection(Direction::None); // Start off still.
     m_speed = 15;
-    m_lives = 3;
+    m_lives = m_snakeBody.size();
     m_score = 0;
     m_lost = false;
 }

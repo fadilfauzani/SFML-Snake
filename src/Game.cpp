@@ -1,7 +1,7 @@
 #include "Game.hpp"
 #include <iostream>
-Game::Game(): m_window("Snake", sf::Vector2u(800, 600)),
- m_snake(m_world.GetBlockSize()),m_world(sf::Vector2u(800,600))
+Game::Game(): m_window("Snake", sf::Vector2u(800, 576)),
+ m_snake(m_world.GetBlockSize()),m_world(sf::Vector2u(800,576))
 {
  m_textbox.Setup(5,14,350,sf::Vector2f(225,0));
  m_textbox.Add("Seeded random number generator with: " + std::to_string(time(NULL)));
@@ -78,6 +78,7 @@ void Game::Update(){
             m_world.RespawnApple();
         }
     }
+    // std::cout << m_snake.GetPosition().x << "," << m_snake.GetPosition().y << std::endl;
     m_window.Update();
 }
 

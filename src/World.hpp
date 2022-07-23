@@ -13,11 +13,13 @@ class World{
         void showText(Snake& l_player,Textbox& l_textbox);
         void Render(sf::RenderWindow& l_window);
         void popboard(Textbox& l_textbox);
+        bool CheckCollision(Snake& l_player);
+        void Add_Border(sf::Vector2f l_pos);
     private:
         sf::Vector2u m_windowSize;
         sf::Vector2i m_item;
         int m_blockSize;
         sf::CircleShape m_appleShape;
-        sf::RectangleShape m_bounds[4];
+        std::vector<sf::RectangleShape> m_bounds;
 };
 #endif  //!__WORLD__H__
