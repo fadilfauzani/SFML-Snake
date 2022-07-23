@@ -13,8 +13,9 @@ class World{
         void showText(Snake& l_player,Textbox& l_textbox);
         void Render(sf::RenderWindow& l_window);
         void popboard(Textbox& l_textbox);
-        bool CheckCollision(Snake& l_player);
-        void Add_Border(sf::Vector2f l_pos);
+        bool CheckCollision(sf::Vector2i l_pos);
+        void Add_Bounds(sf::Vector2f l_pos);
+        void OutOfBorder(Snake& l_player);
     private:
         sf::Vector2u m_windowSize;
         sf::Vector2i m_item;

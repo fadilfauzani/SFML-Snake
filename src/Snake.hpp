@@ -19,6 +19,7 @@ class Snake{
         Direction GetDirection();
         int GetSpeed();
         sf::Vector2i GetPosition();
+        void SetPosition(sf::Vector2i l_pos);
         int GetLives();
         int GetScore();
         void IncreaseScore();

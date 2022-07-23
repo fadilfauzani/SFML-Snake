@@ -9,8 +9,8 @@ Snake::Snake(int l_blockSize){
 void Snake::Reset(){
     m_snakeBody.clear();
     m_snakeBody.push_back(SnakeSegment(5,7));
-    m_snakeBody.push_back(SnakeSegment(5,6));
-    m_snakeBody.push_back(SnakeSegment(5,5));
+    m_snakeBody.push_back(SnakeSegment(4,7));
+    m_snakeBody.push_back(SnakeSegment(3,7));
     // m_snakeBody.push_back(SnakeSegment(5,7));
 
     // m_snakeBody.push_back(SnakeSegment(5,6));
@@ -30,6 +30,9 @@ int Snake::GetSpeed(){ return m_speed; }
 
 sf::Vector2i Snake::GetPosition(){
     return (!m_snakeBody.empty() ? m_snakeBody.front().position : sf::Vector2i(1,1));
+}
+void Snake::SetPosition(sf::Vector2i l_pos){
+    m_snakeBody[0].position = l_pos;
 }
 int Snake::GetLives(){ return m_lives; }
 int Snake::GetScore(){ return m_score; }
