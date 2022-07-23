@@ -4,5 +4,15 @@ Permainan Ular sederhana yang dibuat dengan Library SFML dalam bahasa C++. Dibua
 
 ## Requirements
 
-1. MinGW (Jika memakai Compiler lain / IDE tertentu Ganti folder SFML dengan versi yang sesuai [SFML](https://www.sfml-dev.org/download/sfml/2.5.1/))
+1. MinGW SEH (Jika memakai Compiler lain / IDE tertentu Ganti folder SFML dengan versi yang sesuai [SFML](https://www.sfml-dev.org/download/sfml/2.5.1/))
 2. Makefile
+
+## How To
+Windows
+1. Buka folder bin
+2. jalankan main.exe
+yang lain
+1. Download SFML sesuai dengan  OS kalian
+2. compile menggunakan command make
+3. Buka folder bin
+2. jalankan main
