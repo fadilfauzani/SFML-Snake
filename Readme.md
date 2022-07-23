@@ -11,6 +11,8 @@ Permainan Ular sederhana yang dibuat dengan Library SFML dalam bahasa C++. Dibua
 Windows
 1. Buka folder bin
 2. jalankan main.exe
+
+
 yang lain
 1. Download SFML sesuai dengan  OS kalian
 2. compile menggunakan command make
