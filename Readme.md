@@ -14,7 +14,7 @@ Windows
 
 
 yang lain
-1. Download SFML sesuai dengan  OS kalian
+1. Download SFML sesuai dengan OS kalian
 2. compile menggunakan command make
 3. Buka folder bin
 2. jalankan main
